@@ -1,0 +1,18 @@
+# Build artifacts
+/build/
+/.cache/
+
+# Object files
+*.o
+output.png
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# IDE
+.vscode/settings.json
+.idea/
