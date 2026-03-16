@@ -1,31 +1,20 @@
 # Hello World C++ (CMake)
 
-Prerequisites (Ubuntu/Debian):
+Binary naming
+- `src/exercises/1_1.cpp` -> `build/ex_1_1`
+- `src/exercises/1_2.cpp` -> `build/ex_1_2`
+
+## Build
 
 ```bash
-sudo apt update
-sudo apt install -y cmake g++ pkg-config libopencv-dev
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+cmake --build build
 ```
 
-Minimal C++ "Hello, World!" project using CMake.
-
-Build (Linux):
+## Run thu cong
 
 ```bash
-mkdir -p build
-cmake -S . -B build
-cmake --build build --config Debug
-```
-
-Run:
-
-```bash
+./build/ex_1_1
+./build/ex_1_2
 ./build/hello
 ```
-
-Output:
-- Writes `output.png` in the project root.
-
-VS Code:
-- Use the `Run Build Task` (default: `build`) to compile.
-- Use the `Debug` configuration named "Debug hello" to run under the debugger.
