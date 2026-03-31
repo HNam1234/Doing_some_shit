@@ -4,8 +4,12 @@
     {
       "label": "run current exercise file",
       "type": "shell",
-      "command": "cmake -S . -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Debug && cmake --build build --target ex_${fileBasenameNoExtension} && ./build/ex_${fileBasenameNoExtension}",
-      "problemMatcher": []
+      "command": "cmake -S . -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Debug ; cmake --build build ; .\\build\\Debug\\ex_${fileBasenameNoExtension}.exe",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
